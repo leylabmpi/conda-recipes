@@ -1,0 +1,21 @@
+package:
+  name: pplacer
+  version: 1.1.18
+
+source:
+    url: https://github.com/matsen/pplacer/releases/download/v1.1.alpha18/pplacer-linux-v1.1.alpha18-2-gcb55169.zip
+    fn: pplacer-linux-v1.1.alpha18-2-gcb55169.zip
+
+build:
+  number: 0
+  ignore_prefix_files: True
+
+test:
+  commands:
+    - pplacer --help
+    
+about:
+  home: http://matsen.fhcrc.org/pplacer/
+  license: "open source"
+  summary: pplacer places query sequences on a fixed reference phylogenetic tree to maximize phylogenetic likelihood or posterior probability according to a reference alignment
+
