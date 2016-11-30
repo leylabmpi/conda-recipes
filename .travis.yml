@@ -1,0 +1,8 @@
+os:
+- linux
+- osx
+language: c
+sudo: required
+install: 
+    - ci/travis_setup.sh
+script: ci/travis_run.sh
